@@ -135,6 +135,7 @@ PYTHON_CONF_ENV += \
 PYTHON_CONF_OPTS += \
 	--without-cxx-main 	\
 	--without-doc-strings	\
+	--without-ensurepip \
 	--with-system-ffi	\
 	--disable-pydoc		\
 	--disable-test-modules	\
