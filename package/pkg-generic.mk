@@ -178,7 +178,7 @@ $(BUILD_DIR)/%/.stamp_patched:
 # Check that all directories specified in BR2_GLOBAL_PATCH_DIR exist.
 $(foreach dir,$(call qstrip,$(BR2_GLOBAL_PATCH_DIR)),\
 	$(if $(wildcard $(dir)),,\
-		$(error BR2_GLOBAL_PATCH_DIR contains nonexistent directory $(dir))))
+		$(warning BR2_GLOBAL_PATCH_DIR contains nonexistent directory $(dir))))
 
 # Configure
 $(BUILD_DIR)/%/.stamp_configured:
